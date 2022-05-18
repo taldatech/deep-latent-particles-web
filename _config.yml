@@ -1,0 +1,18 @@
+# Site settings
+title: ICML 2022 - Deep Latent Particles
+description: DLP Project Webpage
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Unsupervised Image Representation Learning with Deep Latent Particles
+#user_description:
+#user_title: DLP Project Webpage
+email: mauriurraco@gmail.com
+youtube_link: https://youtube.com
+github_username:  taldatech/deep-latent-particles-pytorch
+
+exclude: ['package.json', 'src' , 'node_modules']
+markdown: kramdown
+#kramdown:
+#    math_engine: katex
