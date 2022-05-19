@@ -1,18 +1,75 @@
 ---
 layout: default
 ---
+<style>
+div.mw {
+  max-width: 1000px;
+  margin: auto;
+}
+</style>
 
 <h1 align="center">
   <br>
 Abstract
   <br>
 </h1>
-
+<div class="mw">
 <blockquote style="text-align: center;">
         We propose a new representation of visual data that disentangles object position from appearance. Our method, termed Deep Latent Particles (DLP), decomposes the visual input into low-dimensional latent ``particles'', where each particle is described by its spatial location and features of its surrounding region.
          To drive learning of such representations, we follow a VAE-based approach and introduce a prior for particle positions based on a spatial-softmax architecture, and a modification of the evidence lower bound loss inspired by the Chamfer distance between particles. 
          We demonstrate that our DLP representations are useful for downstream tasks such as unsupervised keypoint (KP) detection, image manipulation, and video prediction for scenes composed of multiple dynamic objects. In addition, we show that our probabilistic interpretation of the problem naturally provides uncertainty estimates for particle locations, which can be used for model selection, among other tasks.
 </blockquote>
+</div>
+
+<h1 align="center">
+  <br>
+Method
+  <br>
+</h1>
+
+<div class="mw">
+<b>Goal:</b>
+
+
+
+<br>
+ALOT OF CONTENT
+<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT<br>
+ALOT OF CONTENT
+</div>
+
+<h1 align="center">
+  <br>
+Results
+  <br>
+</h1>
+
+<div class="mw">
+Results Summary
+</div>
 
 
 ### Overview
