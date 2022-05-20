@@ -34,6 +34,9 @@ a:active {
       <img src="https://raw.githubusercontent.com/taldatech/soft-intro-vae-web/main/assets/3d_plane_to_car.gif" style="height:300px">
       <div class="header-icons">
         <a aria-label="Paper" href="https://arxiv.org"><i class="icon fa fa-file-text"></i></a>
+		{% if site.github_username %}
+        <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+        {% endif %}
         {% if site.youtube_link %}
         <a aria-label="Video" target="_blank" href="{{site.youtube_link}}"><i class="icon fa fa-youtube-play" aria-hidden="true"></i></a>
         {% endif %}
@@ -45,10 +48,7 @@ a:active {
         {% endif %}
         {% if site.linkedin_username %}
         <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>
-        {% endif %}
-        {% if site.github_username %}
-        <a aria-label="My Github" target="_blank" href="https://github.com/{{ site.github_username }}"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-        {% endif %}
+        {% endif %}    
         {% if site.medium_username %}
         <a aria-label="My Medium" target="_blank" href="https://medium.com/{{ site.medium_username }}"><i class="icon fa fa-medium" aria-hidden="true"></i></a>
         {% elsif site.medium_url %}

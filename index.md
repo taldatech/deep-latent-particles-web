@@ -39,15 +39,25 @@ $$ \{(z_p^i, z_{\alpha}^i)\}_{i=1}^{K}. $$
   <li><b>Object-based model:</b> designed for object-based scenes (e.g., CLEVRER), PointNet++ models the global regions (e.g., the background) and Gaussian maps (optionally) and a separate Glimpse decoder model the objects and their masks.</li>
 </ol>
 
-<b>Architecture - Encoder (Posterior):</b>
+<b>Architecture - Encoder (Posterior):</b> the encdoer is composet of two components: (1) <b>Position encoder</b> and (2) <b>Appearance encoder</b>.
+
+<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_encoder.gif" style="height:250px">
+
+<ol>
+  <li><b>Position encoder:</b> outputs keypoints -- the spatial location \( z_p = (x,y) \) of interesting areas, where \( (x,y) \) are the coordinates of pixels.</li>
+  <li><b>Appearance encoder:</b> extracts patches (or <i>glimpses</i>) of pre-determined size centered around \( z_p \) and encodes them to latent variables \(z_{\alpha} \).</li>
+</ol>
 
 <br>
 
-<b>Architecture - Prior:</b>
+<b>Architecture - Prior:</b> the prior addresses the question: what are the interesting areas in the image? Inspired by KeyNet [1], we extract points-of-intereset in the image by applying spatial-Softmax (SSM) over feature maps extracted from patches in the image. 
+We term the set of extracted prior keypoints as <i>keypoint proposals</i>. 
 
 <br>
 
 <b>Architecture - Decoder (Likelihood):</b>
+
+<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_decoder.gif" style="height:250px">
 <br>
 
 <b>Training and Optimization:</b>
