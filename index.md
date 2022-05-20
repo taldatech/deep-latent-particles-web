@@ -32,15 +32,19 @@ Method
 
 $$ \{(z_p^i, z_{\alpha}^i)\}_{i=1}^{K}. $$
 
-<b>Architecture:</b> DLP comes in two flavors depending on the scene type: (1) <b>Masked model</b> and (2) <b>Object-based model</b>.
+<b>Architecture:</b> 
+<br>
+DLP comes in two flavors depending on the scene type: (1) <b>Masked model</b> and (2) <b>Object-based model</b>.
 
 <ol>
   <li><b>Masked model:</b> designed for non-object scenes (e.g., faces from CelebA), PointNet++ and Gaussian maps model the local regions around the particles, and the rest (e.g., the background) is propagated from the encdoer (\(\Phi_{bypass} \)).</li>
   <li><b>Object-based model:</b> designed for object-based scenes (e.g., CLEVRER), PointNet++ models the global regions (e.g., the background) and Gaussian maps (optionally) and a separate Glimpse decoder model the objects and their masks.</li>
 </ol>
 
-<b>Architecture - Encoder (Posterior):</b> the encdoer is composet of two components: (1) <b>Position encoder</b> and (2) <b>Appearance encoder</b>.
-
+<b>Architecture - Encoder (Posterior):</b>
+<br>
+The encdoer is composed of two components: (1) <b>Position encoder</b> and (2) <b>Appearance encoder</b>.
+<br>
 <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_encoder.gif" style="height:250px">
 
 <ol>
@@ -50,17 +54,45 @@ $$ \{(z_p^i, z_{\alpha}^i)\}_{i=1}^{K}. $$
 
 <br>
 
-<b>Architecture - Prior:</b> the prior addresses the question: what are the interesting areas in the image? Inspired by KeyNet [1], we extract points-of-intereset in the image by applying spatial-Softmax (SSM) over feature maps extracted from patches in the image. 
+<b>Architecture - Prior:</b>
+<br>
+The prior addresses the question: what are the interesting areas in the image? Inspired by KeyNet [1], we extract points-of-intereset in the image by applying spatial-Softmax (SSM) over feature maps extracted from patches in the image. 
 We term the set of extracted prior keypoints as <i>keypoint proposals</i>. 
 
 <br>
 
 <b>Architecture - Decoder (Likelihood):</b>
-
+<br>
+The decoder architecture depends on the scene type as described in the begining.
+<ol>
+  <li><b>Masked model:</b> PointNet++ and Gaussian maps model the local regions around the particles, and the rest (e.g., the background) is propagated from the encdoer (\(\Phi_{bypass} \)).</li>
+  <li><b>Object-based model:</b> PointNet++ models the global regions (e.g., the background) and Gaussian maps (optionally) and a separate Glimpse decoder model the objects and their masks.</li>
+</ol>
+<br>
 <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_decoder.gif" style="height:250px">
 <br>
 
+<b>Architecture - Putting it All Together:</b>
+<br>
+<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_arch_all.PNG" style="height:300px">
+<br>
+
 <b>Training and Optimization:</b>
+<br>
+The model is optimized as a variational autoencoder (VAE) with objective of maximizing the evidence lower bound (ELBO):
+$$ ELBO(x)$$
+The ELBO is decomposed to the <i>reconstruction error</i> and a <i>KL-divergence</i> regularization term.
+<br>
+However, here we have two <b>unordered</b> sets (or <i>point clouds</i>) of position latent variables: the posterior keypoints and the keypoint proposals from the prior. Note that the number of points in each set may also differ.
+<br>
+Inspired by the <b>Chamfer distance</b> between two sets \( S_1 \) and \( S_2 \):
+$$ Chamfer $$
+We propose the <b>Chamfer-KL</b>, a <i>novel modification</i> for the KL term:
+$$Chamfer-KL $$
+Note that the Chamfer-KL is not a meteric and maintains the properties of the standard KL term.
+<br>
+Our ablative analysis shows that this modification is crucial for the performance of the model, and the method does not work without it.
+
 
 $$ \mathcal{L}_{E_{\phi}}(x) = ELBO(x),$$
 <br>
@@ -70,24 +102,7 @@ ALOT OF CONTENT<br>
 ALOT OF CONTENT<br>
 ALOT OF CONTENT<br>
 ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT
+
 </div>
 
 <h1 align="center">
