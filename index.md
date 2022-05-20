@@ -30,10 +30,8 @@ Method
 <div class="mw">
 <b>Goal:</b>
 
-
-
 <br>
-ALOT OF CONTENT
+$$ \mathcal{L}_{E_{\phi}}(x) = ELBO(x),$$
 <br>
 ALOT OF CONTENT<br>
 ALOT OF CONTENT<br>

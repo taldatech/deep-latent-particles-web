@@ -14,5 +14,5 @@ github_username:  taldatech/deep-latent-particles-pytorch
 
 exclude: ['package.json', 'src' , 'node_modules']
 markdown: kramdown
-#kramdown:
-#    math_engine: katex
+kramdown:
+    math_engine: katex
