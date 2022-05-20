@@ -64,12 +64,12 @@ We term the set of extracted prior keypoints as <i>keypoint proposals</i>.
 <b>Architecture - Decoder (Likelihood):</b>
 <br>
 The decoder architecture depends on the scene type as described in the begining.
+<br>
+<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_decoder.gif" style="height:250px">
 <ol>
   <li><b>Masked model:</b> PointNet++ and Gaussian maps model the local regions around the particles, and the rest (e.g., the background) is propagated from the encdoer (\(\Phi_{bypass} \)).</li>
   <li><b>Object-based model:</b> PointNet++ models the global regions (e.g., the background) and Gaussian maps (optionally) and a separate Glimpse decoder model the objects and their masks.</li>
 </ol>
-<br>
-<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_decoder.gif" style="height:250px">
 <br>
 
 <b>Architecture - Putting it All Together:</b>
