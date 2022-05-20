@@ -28,7 +28,7 @@ Method
 </h1>
 
 <div class="mw">
-<b>Goal:</b> represent an image as a set of particles, where each particle is described by its spatial location $ z_p = (x,y) $ (\\( (x,y) \\) are the coordinates of pixels) and latent features \\(z_{\alpha} \\) that describe the visual features in the surrounding region. 
+<b>Goal:</b> represent an image as a set of particles, where each particle is described by its spatial location $$ z_p = (x,y) $$ (\\( (x,y) \\) are the coordinates of pixels) and latent features \\(z_{\alpha} \\) that describe the visual features in the surrounding region. 
 
 $$ \{(z_p^i, z_{\alpha}^i)\}_{i=1}^{K}. $$
 
