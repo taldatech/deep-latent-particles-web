@@ -93,16 +93,6 @@ Note that the Chamfer-KL is not a meteric and maintains the properties of the st
 <br>
 Our ablative analysis shows that this modification is crucial for the performance of the model, and the method does not work without it.
 
-
-$$ \mathcal{L}_{E_{\phi}}(x) = ELBO(x),$$
-<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-ALOT OF CONTENT<br>
-
 </div>
 
 <h1 align="center">
