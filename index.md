@@ -28,7 +28,17 @@ Method
 </h1>
 
 <div class="mw">
-<b>Goal:</b>
+<b>Goal:</b> represent an image as a set of particles, where each particle is described by its spatial location \\( z_p = (x,y) \\) (\\( (x,y) \\) are the coordinates of pixels) and latent features \\(z_{\alpha} \\) that describe the visual features in the surrounding region. 
+
+$$ \{(z_p^i, z_{\alpha}^i)\}_{i=1}^{K}. $$
+
+<b>Architecture:</b> DLP comes in two flavors depending on the scene type: (1) <b>Masked model</b> and (2) <b>Object-based model</b>.
+
+<ol>
+  <li><b>Masked model:</b> designed for non-object scenes (e.g., faces from CelebA), PointNet++ and Gaussian maps model the local regions around the particles, and the rest (e.g., the background) is propagated from the encdoer (\\(\Phi_{bypass} \\)).</li>
+  <li><b>Object-based model:</b> designed for object-based scenes (e.g., CLEVRER), PointNet++ and Gaussian maps model the global regions (e.g., the background) and a separate Glimpse decoder models the objects and their masks.</li>
+</ol>
+
 
 <br>
 $$ \mathcal{L}_{E_{\phi}}(x) = ELBO(x),$$
@@ -69,5 +79,15 @@ Results
 Results Summary
 </div>
 
+<h1 align="center">
+  <br>
+References
+  <br>
+</h1>
 
-### Overview
+<div class="mw">
+[1] ref1
+<br>
+[2] ref2
+</div>
+
