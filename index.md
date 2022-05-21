@@ -193,6 +193,12 @@ We trained DLP with \( K=25 \) particles and used the mean \(\mu \) and the log-
 As seen in the table above, DLP outperforms KeyNet with \( K=50 \), even though the number of input features to the regressor is the same.
 <br>
 The uncertainty can be further used for model selction and for filtering out low-confidence particles (e.g., filtering bounding boxes of objects), please see the full paper for more details.
+<br>
+<b>Particle-based Image Manipulation:</b>
+<br>
+We have implemented a GUI (see interactive demo below) where one can move the particles around and see their effect on the resulting reconstruction. In addition, the features of each particle can be modified to change its appearance (demonstrated on CLEVRER below).
+<br>
+<img src="https://lh6.googleusercontent.com/123bkcoxAj1nzXl0aLjfYXMRakHI7SYpXeNW2l5lUii0SdGV3MipRSIts5fOLCZ4AYsgoLqvz05zI225qjnRKTZlK6KE2IYByI0vnSjRNp33PsoTuJAEqLSY5obil2fqaA=w1280" style="height:300px">
 </div>
 
 <h1 align="center">
