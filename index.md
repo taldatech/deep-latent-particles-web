@@ -221,7 +221,7 @@ We have implemented a GUI (see interactive demo below) where one can move the pa
 <br>
 <b>Particle-based Video Prediction:</b>
 <br>
-We present a simple idea for particle-based video prediction -- building a graph from the partciles and useing a Graph Convolutional Network (GCN) to predict the temporal change of particles. Please see the paper for more details.
+We present a simple idea for particle-based video prediction -- building a graph from the particles and using a Graph Convolutional Network (GCN) to predict the temporal change of particles. Please see the paper for more details.
 <br>
 <main class="grid">
   <img src="https://lh6.googleusercontent.com/TM__HeXXKLZLC-zMV8k8TxDD5lwm-RzIbLerqcZcoKllL4G9GEK1pPvrIrZhi_qs_9bybL708isq-CzHsSFmWrM=w1280" alt="TrafficVP">
