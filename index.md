@@ -214,12 +214,10 @@ We have implemented a GUI (see interactive demo below) where one can move the pa
 <br>
 <main class="grid">
   <img src="https://lh6.googleusercontent.com/123bkcoxAj1nzXl0aLjfYXMRakHI7SYpXeNW2l5lUii0SdGV3MipRSIts5fOLCZ4AYsgoLqvz05zI225qjnRKTZlK6KE2IYByI0vnSjRNp33PsoTuJAEqLSY5obil2fqaA=w1280" alt="CelebA">
-  <img src="https://lh3.googleusercontent.com/6nF_mkFbjXvq0QCooX5oRiQXYKgKovv5e7ulw2qPxpJykV5pHNHZA2ytnU3gGQQlZu3vrVhoWwNHXGgeTEVHI9T8wU9yyFBNq2M3iM0gQ_437EY32W6kjYj5o_qyp6vHCQ=w1280" alt="CelebA">
+  <img src="https://lh5.googleusercontent.com/pl6Jk9HRnCW4RyT5cZHZzytNFKKAUkY1MbMG4nNlenL8VwOLAaKyInMLMZkgiHxbBFEEr4FYtLKxuDwvkKw8lLYZKlAbgII8V8ELKlARmsjffpDLuN6QpWulIoP6rDB-=w1280" alt="Traffic">
   <img src="https://lh4.googleusercontent.com/4dEFKk7--rKfs8sabgEDUuAZ2JAgjURvIXsys4m3wGq_eXbYn3DrQRlkl2dPq1hnztSns6C-E7R79k9_vYNaxDJ0ZfLw0Za6kLZbOz0EoXyWOnN6BsqTpn_7_BDIH5Ci9w=w1280" alt="CLEVRER">
   <img src="https://lh4.googleusercontent.com/f8XyyKw5jbQhyBR1LGjNjto3MIKmZFKQjYB7ztr_AXnLLjiAH-9I91RzFnlxZUQ0p_drEnFGBmAbpoKJANFdLZCZeVwmjhe7fJ5QF0ssLN2HxVnItKFhDgr1MDp3u8iByQ=w1280" alt="CLEVRER">
 </main>
-
-<img src="https://lh6.googleusercontent.com/123bkcoxAj1nzXl0aLjfYXMRakHI7SYpXeNW2l5lUii0SdGV3MipRSIts5fOLCZ4AYsgoLqvz05zI225qjnRKTZlK6KE2IYByI0vnSjRNp33PsoTuJAEqLSY5obil2fqaA=w1280" style="height:300px">
 
 
 </div>
