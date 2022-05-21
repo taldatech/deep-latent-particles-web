@@ -206,7 +206,7 @@ We trained DLP with \( K=25 \) particles and used the mean \(\mu \) and the log-
 <br>
 As seen in the table above, DLP outperforms KeyNet with \( K=50 \), even though the number of input features to the regressor is the same.
 <br>
-The uncertainty can be further used for model selction and for filtering out low-confidence particles (e.g., filtering bounding boxes of objects), please see the full paper for more details.
+The uncertainty can be further used for model selction and for filtering out low-confidence particles (e.g., filtering bounding boxes of objects), please see the paper for more details.
 <br>
 <b>Particle-based Image Manipulation:</b>
 <br>
@@ -218,7 +218,17 @@ We have implemented a GUI (see interactive demo below) where one can move the pa
   <img src="https://lh4.googleusercontent.com/4dEFKk7--rKfs8sabgEDUuAZ2JAgjURvIXsys4m3wGq_eXbYn3DrQRlkl2dPq1hnztSns6C-E7R79k9_vYNaxDJ0ZfLw0Za6kLZbOz0EoXyWOnN6BsqTpn_7_BDIH5Ci9w=w1280" alt="CLEVRER">
   <img src="https://lh4.googleusercontent.com/f8XyyKw5jbQhyBR1LGjNjto3MIKmZFKQjYB7ztr_AXnLLjiAH-9I91RzFnlxZUQ0p_drEnFGBmAbpoKJANFdLZCZeVwmjhe7fJ5QF0ssLN2HxVnItKFhDgr1MDp3u8iByQ=w1280" alt="CLEVRER">
 </main>
-
+<br>
+<b>Particle-based Video Prediction:</b>
+<br>
+We present a simple idea for particle-based video prediction -- building a graph from the partciles and useing a Graph Convolutional Network (GCN) to predict the temporal change of particles. Please see the paper for more details.
+<br>
+<main class="grid">
+  <img src="https://lh6.googleusercontent.com/TM__HeXXKLZLC-zMV8k8TxDD5lwm-RzIbLerqcZcoKllL4G9GEK1pPvrIrZhi_qs_9bybL708isq-CzHsSFmWrM=w1280" alt="TrafficVP">
+  <img src="https://lh5.googleusercontent.com/wbfBCvsTa5dSoqL8SxD8cDJvxwWfCxCRx-UfHb-Vtm8XFyaBNoEyCWMhai_Ig4GVS_ybsP0c4vBIK_QZIh23hX8=w1280" alt="TrafficVP">
+  <img src="https://lh5.googleusercontent.com/DFyHUyW9S9nyDlAPjlfhmywgXsO-pA5zAnGDF2mEpJVqxSEQl36oyA1cDd7O2btcyxDhrPAK8W1gFrZ9BBOwurTlcZFpbm7YXTuzjwD6sMd-qNPYubIoMPjQoloRAa2MFQ=w1280" alt="TrafficVP">
+  <img src="https://lh5.googleusercontent.com/3vNR7dqizWOAYbUe5TwKumyHcyY-Icr3FrCBmAqXNEFUqvQGCSSceYax7RvXBrj2znx_C10R3zxwbTBW-MeJUlQ=w1280" alt="TrafficVP">
+</main>
 
 </div>
 
