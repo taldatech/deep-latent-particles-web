@@ -112,9 +112,73 @@ Results
 </h1>
 
 <div class="mw">
-Results Summary
+<b>Unsupervised Keypoint Linear Regression on Face Landmarks:</b>
+<br>
+The standard benchmark of unsupervised keypoint discovery -- the linear regression error in predicting annotated keypoints from the discovered keypoints.
+<br>
+The input to the regressor is the keypoint coordinates, and since our method naturally provides uncertainty estimate (the variance of the coordinates) we also experiment with adding the varaince as input features to the regressor).
+<br>
+As can be seen in table below, DLP's performance is state-of-the-art and the full table can be found in the paper.
+<table>
+  <tr>
+    <th>Method</th>
+    <th>K (number of unsupervised KP)</th>
+    <th>Error on MAFL (lower is better)</th>
+  </tr>
+  <tr>
+    <td>Zhang (Zhang et al., 2018)</td>
+    <td> 30 </td>
+	<td> 3.16 </td>
+  </tr>
+  <tr>
+    <td>KeyNet (Jakab et al., 2018)</td>
+    <td>30</td>
+    <td>2.58</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>50</td>
+    <td>2.54</td>
+  </tr>
+  <tr>
+    <td>Ours</td>
+    <td>25</td>
+    <td>2.87</td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td>30</td>
+    <td><b>2.56</b></td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td>50</td>
+    <td><b>2.43</b></td>
+  </tr>
+  <tr>
+    <td>Ours+ (with variance features)</td>
+    <td>25</td>
+    <td><b>2.52</b></td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td>30</td>
+    <td>2.49</td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td>50</td>
+    <td>2.42</td>
+  </tr>
+</table>
+<b>Information from Uncertainty:</b>
+<br>
+We trained DLP with \( K=25 \) particles and used the mean \(\mu \) and the log-variance \( \log(\sigma^2) \) as features for the supervised regression task described above.
+<br>
+As seen in the table above, DLP outperforms KeyNet with \( K=50 \), even though the number of input features to the regressor is the same.
+<br>
+The uncertainty can be further used for model selction and for filtering out low-confidence particles (e.g., filtering bounding boxes of objects), please see the full paper for more details.
 </div>
-
 
 <h1 align="center">
   <br>
