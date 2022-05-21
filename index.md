@@ -21,6 +21,20 @@ table, th, tr, td{
 tr:nth-child(4), tr:nth-child(7) {
  border-bottom: solid 2px #3396FF;
 }
+
+.grid { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-items: center;
+  }
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+
 </style>
 
 <h1 align="center">
@@ -198,7 +212,16 @@ The uncertainty can be further used for model selction and for filtering out low
 <br>
 We have implemented a GUI (see interactive demo below) where one can move the particles around and see their effect on the resulting reconstruction. In addition, the features of each particle can be modified to change its appearance (demonstrated on CLEVRER below).
 <br>
+<main class="grid">
+  <img src="https://lh6.googleusercontent.com/123bkcoxAj1nzXl0aLjfYXMRakHI7SYpXeNW2l5lUii0SdGV3MipRSIts5fOLCZ4AYsgoLqvz05zI225qjnRKTZlK6KE2IYByI0vnSjRNp33PsoTuJAEqLSY5obil2fqaA=w1280" alt="CelebA">
+  <img src="https://lh3.googleusercontent.com/6nF_mkFbjXvq0QCooX5oRiQXYKgKovv5e7ulw2qPxpJykV5pHNHZA2ytnU3gGQQlZu3vrVhoWwNHXGgeTEVHI9T8wU9yyFBNq2M3iM0gQ_437EY32W6kjYj5o_qyp6vHCQ=w1280" alt="CelebA">
+  <img src="https://lh4.googleusercontent.com/4dEFKk7--rKfs8sabgEDUuAZ2JAgjURvIXsys4m3wGq_eXbYn3DrQRlkl2dPq1hnztSns6C-E7R79k9_vYNaxDJ0ZfLw0Za6kLZbOz0EoXyWOnN6BsqTpn_7_BDIH5Ci9w=w1280" alt="CLEVRER">
+  <img src="https://lh4.googleusercontent.com/f8XyyKw5jbQhyBR1LGjNjto3MIKmZFKQjYB7ztr_AXnLLjiAH-9I91RzFnlxZUQ0p_drEnFGBmAbpoKJANFdLZCZeVwmjhe7fJ5QF0ssLN2HxVnItKFhDgr1MDp3u8iByQ=w1280" alt="CLEVRER">
+</main>
+
 <img src="https://lh6.googleusercontent.com/123bkcoxAj1nzXl0aLjfYXMRakHI7SYpXeNW2l5lUii0SdGV3MipRSIts5fOLCZ4AYsgoLqvz05zI225qjnRKTZlK6KE2IYByI0vnSjRNp33PsoTuJAEqLSY5obil2fqaA=w1280" style="height:300px">
+
+
 </div>
 
 <h1 align="center">
