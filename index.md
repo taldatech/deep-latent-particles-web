@@ -239,7 +239,8 @@ Code & Interactive Demo
 </h1>
 
 <div class="mw">
-Link to GitHub, Open in Colab
+Code, pre-trained models and interactive demo are available on <a href="https://github.com/taldatech/deep-latent-particles-pytorch">GitHub</a>:
+<a href="https://github.com/taldatech/deep-latent-particles-pytorch"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height:200px"></a>
 </div>
 
 <h1 align="center">
