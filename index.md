@@ -80,7 +80,9 @@ The decoder architecture depends on the scene type as described in the begining.
 <b>Training and Optimization:</b>
 <br>
 The model is optimized as a variational autoencoder (VAE) with objective of maximizing the evidence lower bound (ELBO):
-$$ \log p_\theta(x) &\geq \mathbb{E}_{q(z|x)}\ \left[\log p_\theta(x|z)\right] - KL(q(z|x) \Vert p(z)) \doteq ELBO(x) $$
+
+$$ \log p_\theta(x) \geq \mathbb{E}_{q(z|x)} \left[\log p_\theta(x|z)\right] - KL(q(z|x) \Vert p(z)) \doteq ELBO(x) $$
+
 The ELBO is decomposed to the <i>reconstruction error</i> and a <i>KL-divergence</i> regularization term.
 <br>
 However, here we have two <b>unordered</b> sets (or <i>point clouds</i>) of position latent variables: the posterior keypoints and the keypoint proposals from the prior. 
@@ -88,6 +90,10 @@ Note that <i>the number of points in each set may also differ</i>.
 <br>
 Inspired by the <b>Chamfer distance</b> between two sets \( S_1 \) and \( S_2 \):
 $$ d_{CH}(S_1, S_2) = \sum_{x \in S_1}\min_{y \in S_2}||x-y||_2^2 + \sum_{y \in S_2}\min_{x \in S_1}||x-y||_2^2. $$
+<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/chamfer_distance.gif" style="height:300px">
+<br>
+Animation by Luke Hawkes [2].
+<br>
 We propose the <b>Chamfer-KL</b>, a <i>novel modification</i> for the KL term:
 $$ d_{CH-KL}(S_1, S_2) = \sum_{x \in S_1}\min_{y \in S_2}KL(x \Vert y) + \sum_{y \in S_2}\min_{x \in S_1}KL(x \Vert y). $$
 Note that the Chamfer-KL is not a meteric and maintains the properties of the standard KL term.
@@ -129,6 +135,6 @@ References
 <div class="mw">
 [1] Jakab, Tomas, et al. "Unsupervised learning of object landmarks through conditional image generation." Advances in neural information processing systems 31 (2018).
 <br>
-[2] ref2
+[2] Luke Hawkes - <a href="https://www.youtube.com/watch?v=P4IyrsWicfs">A visual representation of the Chamfer distance function</a>.
 </div>
 
