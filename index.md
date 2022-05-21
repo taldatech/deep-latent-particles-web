@@ -6,6 +6,17 @@ div.mw {
   max-width: 1000px;
   margin: auto;
 }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, th, tr, td{
+  border:1px dotted black;
+  border-collapse: collapse;
+  border-color: #3396FF;
+}
 </style>
 
 <h1 align="center">
@@ -114,12 +125,12 @@ Results
 <div class="mw">
 <b>Unsupervised Keypoint Linear Regression on Face Landmarks:</b>
 <br>
-The standard benchmark of unsupervised keypoint discovery -- the linear regression error in predicting annotated keypoints from the discovered keypoints.
+The standard benchmark of unsupervised keypoint discovery -- the linear regression error in predicting annotated keypoints from the discovered keypoints on faces from the CelebA and MAFL datasets.
 <br>
 The input to the regressor is the keypoint coordinates, and since our method naturally provides uncertainty estimate (the variance of the coordinates) we also experiment with adding the varaince as input features to the regressor).
 <br>
 As can be seen in table below, DLP's performance is state-of-the-art and the full table can be found in the paper.
-<table>
+<table class="center">
   <tr>
     <th>Method</th>
     <th>K (number of unsupervised KP)</th>
