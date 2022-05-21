@@ -17,6 +17,10 @@ table, th, tr, td{
   border-collapse: collapse;
   border-color: #3396FF;
 }
+
+tr:nth-child(4) {
+ border-bottom: solid 2px green;
+}
 </style>
 
 <h1 align="center">
