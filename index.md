@@ -19,7 +19,7 @@ table, th, tr, td{
 }
 
 tr:nth-child(4), tr:nth-child(7) {
- border-bottom: solid 2px blue;
+ border-bottom: solid 2px #3396FF;
 }
 </style>
 
