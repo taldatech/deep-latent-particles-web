@@ -240,6 +240,7 @@ Code & Interactive Demo
 
 <div class="mw">
 Code, pre-trained models and interactive demo are available on <a href="https://github.com/taldatech/deep-latent-particles-pytorch">GitHub</a>:
+<br>
 <a href="https://github.com/taldatech/deep-latent-particles-pytorch"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height:200px"></a>
 </div>
 
