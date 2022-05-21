@@ -12,6 +12,13 @@ div.mw {
   margin-right: auto;
 }
 
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 table, th, tr, td{
   border:1px dotted black;
   border-collapse: collapse;
@@ -74,7 +81,7 @@ DLP comes in two flavors depending on the scene type: (1) <b>Masked model</b> an
 <br>
 The encdoer is composed of two components: (1) <b>Position encoder</b> and (2) <b>Appearance encoder</b>.
 <br>
-<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_encoder.gif" style="height:250px">
+<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_encoder.gif" style="height:250px" class="centerimg">
 
 <ol>
   <li><b>Position encoder:</b> outputs keypoints -- the spatial location \( z_p = (x,y) \) of interesting areas, where \( (x,y) \) are the coordinates of pixels.</li>
@@ -94,7 +101,7 @@ We term the set of extracted prior keypoints as <i>keypoint proposals</i>.
 <br>
 The decoder architecture depends on the scene type as described in the begining.
 <br>
-<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_decoder.gif" style="height:250px">
+<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_decoder.gif" style="height:250px" class="centerimg">
 <ol>
   <li><b>Masked model:</b> PointNet++ and Gaussian maps model the local regions around the particles, and the rest (e.g., the background) is propagated from the encdoer (\(\Phi_{bypass} \)).</li>
   <li><b>Object-based model:</b> PointNet++ models the global regions (e.g., the background) and Gaussian maps (optionally) and a separate Glimpse decoder model the objects and their masks.</li>
@@ -103,7 +110,7 @@ The decoder architecture depends on the scene type as described in the begining.
 
 <b>Architecture - Putting it All Together:</b>
 <br>
-<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_arch_all.PNG" style="height:300px">
+<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_arch_all.PNG" style="height:300px" class="centerimg">
 <br>
 
 <b>Training and Optimization:</b>
@@ -119,7 +126,7 @@ Note that <i>the number of points in each set may also differ</i>.
 <br>
 Inspired by the <b>Chamfer distance</b> between two sets \( S_1 \) and \( S_2 \):
 $$ d_{CH}(S_1, S_2) = \sum_{x \in S_1}\min_{y \in S_2}||x-y||_2^2 + \sum_{y \in S_2}\min_{x \in S_1}||x-y||_2^2. $$
-<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/chamfer_distance.gif" style="height:300px">
+<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/chamfer_distance.gif" style="height:300px" class="centerimg">
 <br>
 Animation by Luke Hawkes [2].
 <br>
@@ -241,7 +248,7 @@ Code & Interactive Demo
 <div class="mw">
 Code, pre-trained models and interactive demo are available on <a href="https://github.com/taldatech/deep-latent-particles-pytorch">GitHub</a>:
 <br>
-<a href="https://github.com/taldatech/deep-latent-particles-pytorch"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height:200px"></a>
+<a href="https://github.com/taldatech/deep-latent-particles-pytorch"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height:200px" class="centerimg"></a>
 </div>
 
 <h1 align="center">
