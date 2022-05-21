@@ -18,8 +18,8 @@ table, th, tr, td{
   border-color: #3396FF;
 }
 
-tr:nth-child(4) {
- border-bottom: solid 2px green;
+tr:nth-child(4), tr:nth-child(7) {
+ border-bottom: solid 2px blue;
 }
 </style>
 
