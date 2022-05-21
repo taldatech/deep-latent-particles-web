@@ -80,16 +80,20 @@ The decoder architecture depends on the scene type as described in the begining.
 <b>Training and Optimization:</b>
 <br>
 The model is optimized as a variational autoencoder (VAE) with objective of maximizing the evidence lower bound (ELBO):
-$$ ELBO(x)$$
+$$ \log p_\theta(x) &\geq \mathbb{E}_{q(z|x)}\ \left[\log p_\theta(x|z)\right] - KL(q(z|x) \Vert p(z)) \doteq ELBO(x) $$
 The ELBO is decomposed to the <i>reconstruction error</i> and a <i>KL-divergence</i> regularization term.
 <br>
-However, here we have two <b>unordered</b> sets (or <i>point clouds</i>) of position latent variables: the posterior keypoints and the keypoint proposals from the prior. Note that the number of points in each set may also differ.
+However, here we have two <b>unordered</b> sets (or <i>point clouds</i>) of position latent variables: the posterior keypoints and the keypoint proposals from the prior. 
+Note that <i>the number of points in each set may also differ</i>.
 <br>
 Inspired by the <b>Chamfer distance</b> between two sets \( S_1 \) and \( S_2 \):
-$$ Chamfer $$
+$$ d_{CH}(S_1, S_2) = \sum_{x \in S_1}\min_{y \in S_2}||x-y||_2^2 + \sum_{y \in S_2}\min_{x \in S_1}||x-y||_2^2. $$
 We propose the <b>Chamfer-KL</b>, a <i>novel modification</i> for the KL term:
-$$Chamfer-KL $$
+$$ d_{CH-KL}(S_1, S_2) = \sum_{x \in S_1}\min_{y \in S_2}KL(x \Vert y) + \sum_{y \in S_2}\min_{x \in S_1}KL(x \Vert y). $$
 Note that the Chamfer-KL is not a meteric and maintains the properties of the standard KL term.
+<br>
+Intuitively, the prior proposes interesting locations for keypoints based on SSM and the posterior
+picks good locations that align with the reconstruction objective, whilst not being limited by the mean operation of the SSM.
 <br>
 Our ablative analysis shows that this modification is crucial for the performance of the model, and the method does not work without it.
 
