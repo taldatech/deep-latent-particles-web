@@ -41,28 +41,8 @@ tr:nth-child(4), tr:nth-child(7) {
   max-width: 100%;
 }
 
-a:link {
-  color: blue;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:visited {
-  color: red;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: green;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: black;
-  background-color: transparent;
-  text-decoration: underline;
+.textbg {
+  background-color: #f18973;
 }
 </style>
 
@@ -282,6 +262,6 @@ References
 <div class="mw">
 [1] Jakab, Tomas, et al. "Unsupervised learning of object landmarks through conditional image generation." Advances in neural information processing systems 31 (2018).
 <br>
-[2] Luke Hawkes - <a href="https://www.youtube.com/watch?v=P4IyrsWicfs">A visual representation of the Chamfer distance function</a>.
+[2] Luke Hawkes - <a href="https://www.youtube.com/watch?v=P4IyrsWicfs" class="textbg">A visual representation of the Chamfer distance function</a>.
 </div>
 
