@@ -41,6 +41,29 @@ tr:nth-child(4), tr:nth-child(7) {
   max-width: 100%;
 }
 
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
 </style>
 
 <h1 align="center">
@@ -219,10 +242,10 @@ The uncertainty can be further used for model selction and for filtering out low
 We have implemented a GUI (see interactive demo below) where one can move the particles around and see their effect on the resulting reconstruction. In addition, the features of each particle can be modified to change its appearance (demonstrated on CLEVRER below).
 <br>
 <main class="grid">
-  <img src="https://lh6.googleusercontent.com/123bkcoxAj1nzXl0aLjfYXMRakHI7SYpXeNW2l5lUii0SdGV3MipRSIts5fOLCZ4AYsgoLqvz05zI225qjnRKTZlK6KE2IYByI0vnSjRNp33PsoTuJAEqLSY5obil2fqaA=w1280" alt="CelebA">
-  <img src="https://lh5.googleusercontent.com/pl6Jk9HRnCW4RyT5cZHZzytNFKKAUkY1MbMG4nNlenL8VwOLAaKyInMLMZkgiHxbBFEEr4FYtLKxuDwvkKw8lLYZKlAbgII8V8ELKlARmsjffpDLuN6QpWulIoP6rDB-=w1280" alt="Traffic">
-  <img src="https://lh4.googleusercontent.com/4dEFKk7--rKfs8sabgEDUuAZ2JAgjURvIXsys4m3wGq_eXbYn3DrQRlkl2dPq1hnztSns6C-E7R79k9_vYNaxDJ0ZfLw0Za6kLZbOz0EoXyWOnN6BsqTpn_7_BDIH5Ci9w=w1280" alt="CLEVRER">
-  <img src="https://lh4.googleusercontent.com/f8XyyKw5jbQhyBR1LGjNjto3MIKmZFKQjYB7ztr_AXnLLjiAH-9I91RzFnlxZUQ0p_drEnFGBmAbpoKJANFdLZCZeVwmjhe7fJ5QF0ssLN2HxVnItKFhDgr1MDp3u8iByQ=w1280" alt="CLEVRER">
+  <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/celeb_manip_2.gif" alt="CelebA">
+  <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/traffic_manip.gif" alt="Traffic">
+  <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/clevrer_manip_1.gif" alt="CLEVRER">
+  <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/clevrer_manip_2.gif" alt="CLEVRER">
 </main>
 <br>
 <b>Particle-based Video Prediction:</b>
@@ -230,10 +253,10 @@ We have implemented a GUI (see interactive demo below) where one can move the pa
 We present a simple idea for particle-based video prediction -- building a graph from the particles and using a Graph Convolutional Network (GCN) to predict the temporal change of particles. Please see the paper for more details.
 <br>
 <main class="grid">
-  <img src="https://lh6.googleusercontent.com/TM__HeXXKLZLC-zMV8k8TxDD5lwm-RzIbLerqcZcoKllL4G9GEK1pPvrIrZhi_qs_9bybL708isq-CzHsSFmWrM=w1280" alt="TrafficVP">
-  <img src="https://lh5.googleusercontent.com/wbfBCvsTa5dSoqL8SxD8cDJvxwWfCxCRx-UfHb-Vtm8XFyaBNoEyCWMhai_Ig4GVS_ybsP0c4vBIK_QZIh23hX8=w1280" alt="TrafficVP">
-  <img src="https://lh5.googleusercontent.com/DFyHUyW9S9nyDlAPjlfhmywgXsO-pA5zAnGDF2mEpJVqxSEQl36oyA1cDd7O2btcyxDhrPAK8W1gFrZ9BBOwurTlcZFpbm7YXTuzjwD6sMd-qNPYubIoMPjQoloRAa2MFQ=w1280" alt="TrafficVP">
-  <img src="https://lh5.googleusercontent.com/3vNR7dqizWOAYbUe5TwKumyHcyY-Icr3FrCBmAqXNEFUqvQGCSSceYax7RvXBrj2znx_C10R3zxwbTBW-MeJUlQ=w1280" alt="TrafficVP">
+  <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/traffic_pred_2.gif" alt="TrafficVP">
+  <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/traffic_pred_3.gif" alt="TrafficVP">
+  <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/traffic_pred_4.gif" alt="TrafficVP">
+  <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/traffic_pred_5.gif" alt="TrafficVP">
 </main>
 
 </div>
