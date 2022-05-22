@@ -42,7 +42,7 @@ tr:nth-child(4), tr:nth-child(7) {
 }
 
 .bgc {
-  background-color: #f18973;
+  background-color: #33C1FF;
 }
 </style>
 
@@ -248,7 +248,7 @@ Code & Interactive Demo
 </h1>
 
 <div class="mw">
-Code, pre-trained models and interactive demo are available on <a href="https://github.com/taldatech/deep-latent-particles-pytorch">GitHub</a>:
+Code, pre-trained models and interactive demo are available on <span class="bgc"><a href="https://github.com/taldatech/deep-latent-particles-pytorch">GitHub</a></span>:
 <br>
 <a href="https://github.com/taldatech/deep-latent-particles-pytorch"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height:200px" class="centerimg"></a>
 </div>
