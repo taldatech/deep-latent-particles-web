@@ -223,7 +223,7 @@ We have implemented a GUI (see interactive demo below) where one can move the pa
 <br>
 <main class="grid">
   <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/celeb_manip_2.gif" alt="CelebA">
-  <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/traffic_manip.gif" alt="Traffic">
+  <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/tarffic_manip.gif" alt="Traffic">
   <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/clevrer_manip_1.gif" alt="CLEVRER">
   <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/clevrer_manip_2.gif" alt="CLEVRER">
 </main>
