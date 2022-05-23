@@ -81,7 +81,7 @@ DLP comes in two flavors depending on the scene type: (1) <b>Masked model</b> an
 
 <b>Architecture - Encoder (Posterior):</b>
 <br>
-The encdoer is composed of two components: (1) <b>Position encoder</b> and (2) <b>Appearance encoder</b>.
+The encoder is composed of two components: (1) <b>Position encoder</b> and (2) <b>Appearance encoder</b>.
 <br>
 <img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_encoder.gif" style="height:250px" class="centerimg">
 
