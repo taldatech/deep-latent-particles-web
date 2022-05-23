@@ -95,7 +95,7 @@ The encoder is composed of two components: (1) <b>Position encoder</b> and (2) <
 <b>Architecture - Prior:</b>
 <br>
 The prior addresses the question: what are the interesting areas in the image? Inspired by KeyNet [1], we extract points-of-intereset in the image by applying spatial-Softmax (SSM) over feature maps extracted from patches in the image. 
-We term the set of extracted prior keypoints as <i>keypoint proposals</i>. 
+We term the set of extracted prior keypoints as <i>keypoint proposals</i>.
 
 <br>
 
@@ -134,10 +134,10 @@ Animation by Luke Hawkes [2].
 <br>
 We propose the <b>Chamfer-KL</b>, a <i>novel modification</i> for the KL term:
 $$ d_{CH-KL}(S_1, S_2) = \sum_{x \in S_1}\min_{y \in S_2}KL(x \Vert y) + \sum_{y \in S_2}\min_{x \in S_1}KL(x \Vert y). $$
-Note that the Chamfer-KL is not a meteric and maintains the properties of the standard KL term.
+Note that the Chamfer-KL is not a metric and maintains the properties of the standard KL term.
 <br>
 Intuitively, the prior proposes interesting locations for keypoints based on SSM and the posterior
-picks good locations that align with the reconstruction objective, whilst not being limited by the mean operation of the SSM.
+picks good locations that align with the reconstruction objective, whilst not being limited by the averaging operation of the SSM.
 <br>
 Our ablative analysis shows that this modification is crucial for the performance of the model, and the method does not work without it.
 
