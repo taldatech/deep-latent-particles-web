@@ -112,7 +112,7 @@ The decoder architecture depends on the scene type as described in the begining.
 
 <b>Architecture - Putting it All Together:</b>
 <br>
-<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_arch_all.PNG"  class="centerimg">
+<img src="https://raw.githubusercontent.com/taldatech/deep-latent-particles-web/main/assets/dlp_arch_all.PNG" style="height:400px" class="centerimg">
 <br>
 
 <b>Training and Optimization:</b>
