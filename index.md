@@ -94,7 +94,7 @@ The encoder is composed of two components: (1) <b>Position encoder</b> and (2) <
 
 <b>Architecture - Prior:</b>
 <br>
-The prior addresses the question: what are the interesting areas in the image? Inspired by KeyNet [1], we extract points-of-intereset in the image by applying spatial-Softmax (SSM) over feature maps extracted from patches in the image. 
+The prior addresses the question: what are the interesting areas in the image? Inspired by KeyNet [1], we extract points-of-interest in the image by applying spatial-Softmax (SSM) over feature maps extracted from patches in the image. 
 We term the set of extracted prior keypoints as <i>keypoint proposals</i>.
 
 <br>
