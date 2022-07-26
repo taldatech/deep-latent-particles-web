@@ -9,7 +9,7 @@ username: Unsupervised Image Representation Learning with Deep Latent Particles
 #user_description:
 #user_title: DLP Project Webpage
 #email: taldanielm at campus at technion dot ac dot il
-youtube_link: https://youtube.com
+youtube_link: https://youtu.be/6xywAtE7WPw
 github_username:  taldatech/deep-latent-particles-pytorch
 
 exclude: ['package.json', 'src' , 'node_modules']
